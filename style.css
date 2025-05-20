@@ -1,0 +1,166 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    line-height: 1.6;
+  } 
+
+.titulo {
+  color: #D8DADB;
+    font-family: "Roboto", sans-serif;
+      font-size: 50px;
+}
+
+.legenda {
+  color: #D8DADB;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+  body {
+    line-height: 1.6;
+  }
+
+  nav {
+    background-color:#A919F0;
+    color: #A919F0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    gap: 20rem;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav a {
+    font-family: "Roboto", sans-serif;
+      font-size: 28px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  section {
+    padding: 60px 20px;
+    min-height: 100vh;
+  }
+
+ 
+  #home {
+    background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+     background-size: cover;
+     background-position: center;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+    }
+  
+
+ .imagem{
+    
+    width: 100px;
+    left: 100px;
+    height: 100px;
+ }
+
+  #home button {
+    padding: 15px 25px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  #quem-somos {
+    background: #292929;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .quem-somos-texto {
+    max-width: 500px;
+  }
+
+  .quem-somos-img {
+    max-width: 300px;
+  }
+
+  .quem-somos-img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .pontos-fortes li {
+    margin-bottom: 10px;
+  }
+
+  #contato {
+    background: #1D1D1D;
+  }
+
+  .comentario-form {
+    margin-top: 30px;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .comentario-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-size: 16px;
+  }
+
+  .comentario-form button {
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #topo-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
