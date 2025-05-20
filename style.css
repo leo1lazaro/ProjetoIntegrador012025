@@ -6,18 +6,39 @@
     font-family: Arial, sans-serif;
   }
 
+  :root{
+    --text-color: #D8DADB;
+    --background-color: #A919F0;
+    --background-dois: #292929;
+    --background-tres: #1D1D1D;
+    --sun-color: gold;
+    --moon-color: midnightblue;
+  }
+  .icon-toggle {
+    font-size: 48px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .sun {
+    color: var(--sun-color);
+  }
+
+  .moon {
+    color: var(--moon-color);
+  }
+
   body {
     line-height: 1.6;
   } 
 
 .titulo {
-  color: #D8DADB;
+  color: var(--text-color);
     font-family: "Roboto", sans-serif;
       font-size: 50px;
 }
 
 .legenda {
-  color: #D8DADB;
+  color: var(--text-color);
     font-family: "Poppins", sans-serif;
     font-size: 20px;
 }
@@ -27,8 +48,8 @@
   }
 
   nav {
-    background-color:#A919F0;
-    color: #A919F0;
+    background-color:var(--background-color);
+    color: var(--text-color);
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -57,7 +78,7 @@
     background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
      background-size: cover;
      background-position: center;
-     color: white;
+     color: var(--text-color);
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -76,7 +97,7 @@
   #home button {
     padding: 15px 25px;
     background-color: #25D366;
-    color: white;
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -85,7 +106,7 @@
   }
 
   #quem-somos {
-    background: #292929;
+    background: var(--background-dois);
     display: flex;
     gap: 40px;
     align-items: center;
@@ -111,7 +132,7 @@
   }
 
   #contato {
-    background: #1D1D1D;
+    background: var(--background-tres);
   }
 
   .comentario-form {
@@ -137,7 +158,7 @@
     margin-top: 15px;
     padding: 12px 24px;
     background-color: #333;
-    color: white;
+    color: var(--text-color);
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -146,8 +167,8 @@
 
 
   footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--background-dois);
+    color: var(--text-color);
     text-align: center;
     padding: 20px;
   }
@@ -157,10 +178,18 @@
     bottom: 20px;
     right: 20px;
     background-color: #000;
-    color: #fff;
+    color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
+  }
+  body:has(.icon-toggle.sun) {
+    --text-color: white;
+    --background-color: #00E3CC;
+    --background-dois: #009688;
+    --background-tres: #44E3D3;
+    --sun-color: gold;
+    --moon-color: midnightblue;
   }
